@@ -11,6 +11,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "via.placeholder.com",
       },
+      experimental: {
+  optimizeFonts: false,
+},
+
     ],
   },
 };
