@@ -1,70 +1,120 @@
-# Getting Started with Create React App
+# MATMAZEL - Official Hair & Make Up Studio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A premium, fully responsive static website for MATMAZEL, a luxury hair and makeup studio in İzmit, Turkey.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- 🎨 Modern, elegant, and minimal design
+- 📱 Fully responsive (mobile, tablet, desktop)
+- ✨ Smooth animations with Framer Motion
+- 🎯 SEO optimized
+- ⚡ Built with Next.js 14 (App Router)
+- 💅 Styled with TailwindCSS
+- 🔤 Premium typography (Montserrat, Poppins, Inter)
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Next.js 14** - React framework with App Router
+- **React 18** - UI library
+- **TypeScript** - Type safety
+- **TailwindCSS** - Utility-first CSS framework
+- **Framer Motion** - Animation library
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js 18+ installed
+- npm or yarn package manager
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Install dependencies:
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Run the development server:
+```bash
+npm run dev
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### `npm run eject`
+### Build for Production
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm run build
+npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Project Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+matmazel/
+├── app/
+│   ├── about/          # About Us page
+│   ├── contact/        # Contact page
+│   ├── gallery/        # Gallery page
+│   ├── services/       # Services page
+│   ├── globals.css     # Global styles
+│   ├── layout.tsx      # Root layout
+│   └── page.tsx        # Home page
+├── components/
+│   ├── Footer.tsx      # Footer component
+│   ├── Header.tsx      # Header/Navigation component
+│   └── Logo.tsx        # Logo component
+├── public/             # Static assets
+└── ...config files
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Pages
 
-## Learn More
+1. **Home** (`/`) - Hero section, about preview, services highlights, gallery preview, testimonials, contact preview
+2. **About** (`/about`) - Studio mission, professional background, vision, values
+3. **Services** (`/services`) - Hair styling, coloring, cuts, bridal hair, professional makeup
+4. **Gallery** (`/gallery`) - Instagram-style gallery with masonry layout
+5. **Contact** (`/contact`) - Contact form, address, Google Maps embed, social links
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Design System
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Colors
+- **Black**: `#000000`
+- **White**: `#FFFFFF`
+- **Champagne**: `#D4C2A8`
+- **Light Grey**: `#CFCFCF`
 
-### Code Splitting
+### Typography
+- **Headings**: Montserrat / Poppins
+- **Body**: Inter
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Customization
 
-### Analyzing the Bundle Size
+### Instagram Link
+Update the Instagram link in:
+- `components/Header.tsx`
+- `components/Footer.tsx`
+- `app/page.tsx`
+- `app/services/page.tsx`
+- `app/contact/page.tsx`
+- `app/gallery/page.tsx`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Current: `https://www.instagram.com/ekipmatmazelizmit`
 
-### Making a Progressive Web App
+### Contact Information
+Update contact details in:
+- `app/contact/page.tsx`
+- `components/Footer.tsx`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Google Maps
+Update the Google Maps embed URL in `app/contact/page.tsx` with your actual studio location.
 
-### Advanced Configuration
+## SEO
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+The website includes SEO meta tags optimized for:
+- "Women Hair Studio in İzmit"
+- "MATMAZEL Official Hair & Make Up Studio"
 
-### Deployment
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Private project for MATMAZEL Studio.
